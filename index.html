@@ -4,7 +4,6 @@
     <title>Dance Fitness with Daisy</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
       <script
               src="https://code.jquery.com/jquery-3.5.1.js"
               integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
@@ -18,8 +17,14 @@
         p{
         }
         .jumbotron{
-            padding: 2.5rem 2rem;
+            padding: 1.5rem 1rem;
             border-bottom: 3px solid white;
+        }
+        .title {
+            color:white;
+            font-size: max(4.3vw, 40px);
+            font-weight: 300;
+            line-height: 1.2;
         }
         .title-bar{
           background-color:Coral;
@@ -34,7 +39,7 @@
         }
         .profile-pic {
             border-radius: 150px;
-            border: 3px solid white;
+            border: 2px solid white;
         }
         .main-pane {
             border: 3px solid black;
@@ -46,6 +51,10 @@
             background-color: rgba(255,255,255,.5);
             padding-bottom:5px;
         }
+        .page-title{
+            text-align:center;
+            font-size:36px;
+        }
       </style>
   </head>
   <body>
@@ -54,7 +63,7 @@
       <div class="row">
           <div class="col-0 col-sm-0 col-md-1"></div>
           <div class="col-12 col-sm-12 col-md-10">
-            <h1 class="display-4" style="color:white">Dance Fitness with Daisy</h1>
+            <h1 class="title">Dance Fitness with Daisy</h1>
           </div>
       </div>
   </div>
@@ -66,7 +75,7 @@
                 <div class="row">
                     <div class="col-12 col-sm-6">
                         <div class="main-pane">
-                        <h1 style="font-size:37px">⭐ The Sunday Wiggle ⭐</h1>
+                        <h1 class="page-title">⭐ The Sunday Wiggle ⭐</h1>
                         <br />
                         <p>Live on Zoom <u>every Sunday at 9.30am</u>.</p>
                         <p>Class lasts 50 minutes.</p>
