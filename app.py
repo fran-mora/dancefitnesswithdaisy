@@ -1,15 +1,5 @@
-import random
-import sys
-import time
 
-# from postediting import find_match
-
-sys.path.append('..')
-
-from flask import Flask, session, send_from_directory
-from flask import render_template
-import util
-from flask import request
+from flask import Flask, send_from_directory
 # creates a Flask application, named app
 app = Flask(__name__)
 
@@ -17,8 +7,12 @@ app = Flask(__name__)
 # a route where we will display a welcome message via an HTML template
 @app.route("/")
 def index():
-    return render_template('index.html')
+    return send_from_directory('.', 'index.html')
 
+
+@app.route('/<path:path>')
+def send_static(path):
+    return send_from_directory('.', path)
 
 
 # run the application

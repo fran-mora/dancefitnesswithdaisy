@@ -11,7 +11,7 @@
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
       <style>
         p{
-            font-size:16pt;
+            font-size:15pt;
         }
         .title-bar{
           background-color:Coral;
@@ -20,15 +20,21 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 50%;
+        }
+        .bordered {
+            border: 1px solid black;
         }
       </style>
   </head>
   <body>
-  <div class="jumbotron jumbotron-fluid title-bar">
+  <div class="jumbotron title-bar">
   <div class="container">
-    <h1 class="display-4" style="color:white">Dance Fitness With Daisy</h1>
-    <!--<p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>-->
+      <div class="row">
+          <div class="col-0 col-sm-0 col-md-1"></div>
+          <div class="col-12 col-sm-12 col-md-10">
+            <h1 class="display-4" style="color:white">Dance Fitness with Daisy</h1>
+          </div>
+      </div>
   </div>
 </div>
     <div class="container">
@@ -39,12 +45,12 @@
                     <div class="col-12 col-sm-6">
                         <h1>⭐ The Sunday Wiggle ⭐</h1>
                         <br />
-                        <p>Live on Zoom every Sunday at 9.30am.</p>
+                        <p>Live on Zoom <u>every Sunday at 9.30am</u>.</p>
                         <p>Class lasts 50 minutes.</p>
                         <p>Wake up and join me for a boogie in the kitchen to start your Sunday right!</p>
                     </div>
                     <div class="col-12 col-sm-6">
-                        <img src="profile.jpeg" width="30%" alt="Daisy Hardy" class="center"/>
+                        <img src="profile.jpeg" alt="Daisy Hardy" class="center"/>
                     </div>
                 </div>
                 <p>Book now:</p>
@@ -53,7 +59,7 @@
                         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                             <input type="hidden" name="cmd" value="_s-xclick">
                             <input type="hidden" name="hosted_button_id" value="MZQSJS3LD3284">
-                            <table class="center">
+                            <table class="">
                                 <tr><td><input type="hidden" name="on0" value="Number of classes">Number of classes</td></tr><tr><td>
                                 <select class="form-control" name="os0">
                                     <option value="One Class">One Class £5.00 GBP</option>
@@ -63,8 +69,8 @@
                             </table>
                             <br />
                             <input type="hidden" name="currency_code" value="GBP">
-                            <input class="center" type="image" width="200px" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
-                            <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                            <input class="" type="image" width="200px" src="buy-button.png" border="0" name="submit" alt="Buy Now">
+                            <!--<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">-->
                         </form>
                     </div>
                     <div class="col-12 col-sm-6">
