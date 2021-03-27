@@ -10,8 +10,15 @@
               crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
       <style>
-        p{
+        body{
+            background-image: url('coral-background2.jpg');
             font-size:15pt;
+        }
+        p{
+        }
+        .jumbotron{
+            padding: 2.5rem 2rem;
+            border-bottom: 3px solid white;
         }
         .title-bar{
           background-color:Coral;
@@ -23,6 +30,18 @@
         }
         .bordered {
             border: 1px solid black;
+        }
+        .profile-pic {
+            border-radius: 150px;
+        }
+        .main-pane {
+            border: 3px solid black;
+            border-radius: 15px;
+            border-color: coral;
+            padding:15px;
+            margin-bottom:10px;
+            height:100%;
+            background-color: rgba(255,255,255,.5);
         }
       </style>
   </head>
@@ -43,44 +62,47 @@
             <div class="col-12 col-sm-12 col-md-10">
                 <div class="row">
                     <div class="col-12 col-sm-6">
-                        <h1>⭐ The Sunday Wiggle ⭐</h1>
+                        <div class="main-pane">
+                        <h1 style="font-size:37px">⭐ The Sunday Wiggle ⭐</h1>
                         <br />
                         <p>Live on Zoom <u>every Sunday at 9.30am</u>.</p>
                         <p>Class lasts 50 minutes.</p>
                         <p>Wake up and join me for a boogie in the kitchen to start your Sunday right!</p>
-                    </div>
-                    <div class="col-12 col-sm-6">
-                        <img src="profile.jpeg" alt="Daisy Hardy" class="center"/>
-                    </div>
-                </div>
-                <p>Book now:</p>
-                <div class="row">
-                    <div class="col-12 col-sm-6">
+                        <p>Book now:</p>
                         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                            <input type="hidden" name="cmd" value="_s-xclick">
-                            <input type="hidden" name="hosted_button_id" value="MZQSJS3LD3284">
-                            <table class="">
-                                <tr><td><input type="hidden" name="on0" value="Number of classes">Number of classes</td></tr><tr><td>
-                                <select class="form-control" name="os0">
-                                    <option value="One Class">One class £5.00 GBP</option>
-                                    <option value="Five classes">Five classes £22.00 GBP</option>
-                                    <option value="Ten classes">Ten classes £40.00 GBP</option>
-                                </select> </td></tr>
-                            </table>
-                            <br />
-                            <input type="hidden" name="currency_code" value="GBP">
-                            <input class="" type="image" width="200px" src="buy-button.png" border="0" name="submit" alt="Buy Now">
-                            <!--<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">-->
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="MZQSJS3LD3284">
+                        <table class="">
+                            <tr><td><input type="hidden" name="on0" value="Number of classes">Number of classes</td></tr><tr><td>
+                            <select class="form-control" name="os0">
+                                <option value="One Class">One class £5.00 GBP</option>
+                                <option value="Five classes">Five classes £22.00 GBP</option>
+                                <option value="Ten classes">Ten classes £40.00 GBP</option>
+                            </select> </td></tr>
+                        </table>
+                        <br />
+                        <input type="hidden" name="currency_code" value="GBP">
+                        <input class="" type="image" width="200px" src="buy-button.png" border="0" name="submit" alt="Buy Now">
+                        <!--<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">-->
+                        <p>The Zoom link will be sent to you after purchase.</p>
                         </form>
+                        </div>
                     </div>
                     <div class="col-12 col-sm-6">
-                        <p>The Zoom link will be sent to you after purchase.</p>
+                        <div class="main-pane">
+                            <img src="daisy-circle.jpeg" width="60%" alt="Daisy Hardy" class="center profile-pic"/>
+                            <br />
+                            <p><b>Daisy Hardy</b></p>
+                            <p>Professional Dancer and Level 2 Fitness Instructor</p>
+                            <p><b>Contact me:</b></p>
+                            <p>
+                                <a href="mailto:daisyhardy@hotmail.com">daisyhardy@hotmail.com</a><br />
+                                +44 778332564
+                            </p>
+                        </div>
+                        <br />
                     </div>
                 </div>
-                <br />
-                <br />
-
-
             </div>
         </div>
     </div>
